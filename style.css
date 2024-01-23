@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gilroy';
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* Page1(Add Friend) */
+#page1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 37, 37);
+}
+
+#card{
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #302c2c;
+    padding: 15px;
+    text-align: center;
+}
+
+#card img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+#card h1{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+#card h5{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-top: -10px;
+}
+
+#card button{
+    background-color:rgb(104, 213, 230);
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* Page2(Like a Post) */
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(73, 71, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #423b3b;
+    position: relative;
+    overflow: hidden;
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#container i{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5;
+}
+
+/* Page3(Custom Cursor) */
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: fixed;
+    transition: all linear 0.1s;
+}
+
+h1{
+    font-size: 9vw;
+    font-weight: 900;
+}
+
+/* Page4(MouseEnter,leave,move) */
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    position: relative;
+}
+
+.elem{
+    height: 120px;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* position: relative; */
+}
+
+.elem h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode:difference;
+}
+
+.elem img{
+    height: 120px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+/* Page5() */
+#page5{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(21, 22, 22);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card5{
+    height: 500px;
+    width: 350px;
+    background-color: #000;
+    border-radius: 15px;
+    border: 2px solid #33352f;
+    position: relative;
+    overflow: hidden;
+}
+
+.storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+#story{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    /* border: 3px solid rgb(232, 27, 222); */
+    background: linear-gradient(yellow,rgb(245, 74, 103),blue,rgb(255, 0, 255),orange);
+    padding: 2px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
